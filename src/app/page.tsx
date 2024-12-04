@@ -12,25 +12,27 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
-  // other metadata
+  title: "TestMate - Your Trusted Testing Partner",
+  description:
+    "TestMate is your reliable partner for conducting secure and efficient online examinations. Powered by advanced AI, TestMate ensures insightful analytics, robust authentication, and a seamless testing experience for educational institutions and organizations.",
+  icons: {
+    icon: "/images/logo/testmate_icon_only_logo.png",
+  },
 };
-
 export default function Home() {
   return (
     <>
       <ScrollUp />
       <Hero />
       <Features />
-      <Video />
-      <Brands />
+      {/* <Video /> */}
+      {/* <Brands /> */}
       <AboutSectionOne />
-      <AboutSectionTwo />
-      <Testimonials />
+      {/* <AboutSectionTwo /> */}
+      {/* <Testimonials /> */}
       <Pricing />
-      <Blog />
-      <Contact />
+      {/* <Blog /> */}
+      {/* <Contact /> */}
     </>
   );
 }

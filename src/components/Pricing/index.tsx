@@ -11,8 +11,8 @@ const Pricing = () => {
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Simple and Affordable Pricing"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Plans to enhance your assessment efficiency"
+          paragraph=""
           center
           width="665px"
         />
@@ -59,43 +59,51 @@ const Pricing = () => {
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
-            packageName="Lite"
-            price={isMonthly ? "40" : "120"}
+            packageName="Open Source"
+            price={isMonthly ? "0" : "0"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Access core TestMate functionalities with community support. Perfect for developers and small organizations looking to customize and self-host."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Community Support" status="active" />
+            <OfferList text="Self-Hosting" status="active" />
+            <OfferList text="No Commercial Use" status="inactive" />
+            <OfferList text="No Email Support" status="inactive" />
           </PricingBox>
           <PricingBox
             packageName="Basic"
-            price={isMonthly ? "399" : "789"}
+            price={isMonthly ? "0" : "0"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Get started with our basic plan, offering essential features for individual developers and small projects."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
+            <OfferList text="Up to 50 participants per exam" status="active" />
+            <OfferList text="Basic AI scoring capabilities" status="active" />
             <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Limited analytics and reporting" status="active" />
           </PricingBox>
           <PricingBox
-            packageName="Plus"
-            price={isMonthly ? "589" : "999"}
+            packageName="Pro"
+            price={isMonthly ? "19" : "200"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Unlock advanced features and priority support for professional use."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
+            <OfferList
+              text="Up to 1000 participants per exam"
+              status="active"
+            />
+            <OfferList
+              text="Advanced AI scoring capabilities"
+              status="active"
+            />
+            <OfferList text="Priority Email Support" status="active" />
+            <OfferList
+              text="Detailed analytics and reporting"
+              status="active"
+            />
+            <OfferList text="Customizable exam templates" status="active" />
+            <OfferList
+              text="Integration with third-party tools"
+              status="active"
+            />
           </PricingBox>
         </div>
       </div>
